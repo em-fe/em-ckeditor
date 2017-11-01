@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # em-ckeditor
 基于 VUE2 的 ckeditor 富文本编辑器
 
