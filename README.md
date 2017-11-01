@@ -1,10 +1,11 @@
-# EM-FE
-基于 VUE2 的 UI 库
+<<<<<<< HEAD
+# em-ckeditor
+基于 VUE2 的 ckeditor 富文本编辑器
 
-[![em-fe](https://img.shields.io/npm/v/em-fe.svg?style=flat-square)](https://www.npmjs.org/package/em-fe)
+<!-- [![em-fe](https://img.shields.io/npm/v/em-fe.svg?style=flat-square)](https://www.npmjs.org/package/em-fe)
 [![NPM downloads](http://img.shields.io/npm/dm/em-fe.svg?style=flat-square)](https://npmjs.org/package/em-fe)
 [![Package Quality](http://npm.packagequality.com/shield/em-fe.svg)](http://packagequality.com/#?package=em-fe)
-[![NPM downloads](https://img.shields.io/npm/dt/em-fe.svg?style=flat-square)](https://npmjs.org/package/em-fe)
+[![NPM downloads](https://img.shields.io/npm/dt/em-fe.svg?style=flat-square)](https://npmjs.org/package/em-fe) -->
 
 ## 结构
 
@@ -41,13 +42,8 @@
 `npm run build` 打包
 
 1. js 打包
-2. scss 打包
 
 
 ## 看效果
 
-1. 确定安装完依赖`npm install`之后，运行`npm start`，会自动调到[`http://localhost:8081`]
-
-2. 确定安装完依赖`npm install`之后，运行`npm run build`，手动打开`examples/iife/index.html`
-
-两者区别，一个是开发环境，一个是生产环境。
+确定安装完依赖`npm install`之后，运行`npm start`，会自动调到[`http://localhost:8082`]
