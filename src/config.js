@@ -33,12 +33,11 @@ export default {
       items: ['Scayt'],
     },
   ],
-  filebrowserUploadUrl: 'http://gateway.inner.evente.cn:8000/public/upload',
   customConfig: '',
   extraPlugins: 'autoembed,embedsemantic,image2,uploadimage,uploadfile',
   removePlugins: 'image',
   height: this.height,
-  contentsCss: ['https://cdn.ckeditor.com/4.7.3/standard-all/contents.css'], // 可以注入css
+  contentsCss: [], // 可以注入css
   bodyClass: 'em-editor-body',
   format_tags: 'p;h1;h2;h3;pre',
   removeDialogTabs: 'image:advanced;link:advanced',
