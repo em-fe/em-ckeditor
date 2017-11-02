@@ -28,7 +28,7 @@ export default {
     },
     uploadlink: {
       type: String,
-      default: 'http://gateway.inner.evente.cn:8000/public/upload',
+      default: 'http://shared-client.inner.evente.cn:30340/upload/upImg',
     },
     cdnjs: {
       type: String,

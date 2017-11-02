@@ -9,7 +9,7 @@
     <div v-show="subData">提交内容为：{{subData}}</div>
     <br>
     <br>
-    <em-ckeditor v-model="data1" :className="{'editor-page': true}"></em-ckeditor>
+    <em-ckeditor v-model="data1" :className="{'editor-page': true}" uploadlink="http://shared-client.inner.evente.cn:30340/upload/upImg"></em-ckeditor>
     <br>
     <h3>API</h3>
     <table>
@@ -56,7 +56,7 @@
           <td>uploadlink</td>
           <td>上传的 ajax 接口地址</td>
           <td>String</td>
-          <td>http://gateway.inner.evente.cn:8000/public/upload</td>
+          <td>http://shared-client.inner.evente.cn:30340/upload/upImg</td>
         </tr>
         <tr>
           <td>cdnjs</td>
