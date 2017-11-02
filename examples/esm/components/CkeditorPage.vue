@@ -9,7 +9,7 @@
     <div v-show="subData">提交内容为：{{subData}}</div>
     <br>
     <br>
-    <em-ckeditor v-model="data1" :className="{'editor-page': true}"></em-ckeditor>
+    <em-ckeditor v-model="data1" :className="{'editor-page': true}" uploadlink="http://shared-client.inner.evente.cn:30340/upload/upImg"></em-ckeditor>
     <br>
     <h3>API</h3>
     <table>
@@ -51,6 +51,24 @@
           <td>编辑器的 height</td>
           <td>Number</td>
           <td>200</td>
+        </tr>
+        <tr>
+          <td>uploadlink</td>
+          <td>上传的 ajax 接口地址</td>
+          <td>String</td>
+          <td>http://shared-client.inner.evente.cn:30340/upload/upImg</td>
+        </tr>
+        <tr>
+          <td>cdnjs</td>
+          <td>ckeditor 的 js 地址</td>
+          <td>String</td>
+          <td>https://cdn.ckeditor.com/4.7.3/standard-all/ckeditor.js</td>
+        </tr>
+        <tr>
+          <td>cdncss</td>
+          <td>ckeditor 的 css 地址</td>
+          <td>String</td>
+          <td>https://cdn.ckeditor.com/4.7.3/standard-all/contents.css</td>
         </tr>
       </tbody>
     </table>
