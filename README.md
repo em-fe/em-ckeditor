@@ -1,10 +1,10 @@
 # em-ckeditor
 基于 VUE2 的 ckeditor 富文本编辑器
 
-<!-- [![em-fe](https://img.shields.io/npm/v/em-fe.svg?style=flat-square)](https://www.npmjs.org/package/em-fe)
-[![NPM downloads](http://img.shields.io/npm/dm/em-fe.svg?style=flat-square)](https://npmjs.org/package/em-fe)
-[![Package Quality](http://npm.packagequality.com/shield/em-fe.svg)](http://packagequality.com/#?package=em-fe)
-[![NPM downloads](https://img.shields.io/npm/dt/em-fe.svg?style=flat-square)](https://npmjs.org/package/em-fe) -->
+[![em-ckeditor](https://img.shields.io/npm/v/em-ckeditor.svg?style=flat-square)](https://www.npmjs.org/package/em-ckeditor)
+[![NPM downloads](http://img.shields.io/npm/dm/em-ckeditor.svg?style=flat-square)](https://npmjs.org/package/em-ckeditor)
+<!-- [![Package Quality](http://npm.packagequality.com/shield/em-ckeditor.svg)](http://packagequality.com/#?package=em-ckeditor) -->
+[![NPM downloads](https://img.shields.io/npm/dt/em-ckeditor.svg?style=flat-square)](https://npmjs.org/package/em-ckeditor)
 
 ## 结构
 
