@@ -6,8 +6,6 @@
 <script>
 import config from './config';
 
-console.log(config, 'config');
-
 export default {
   name: 'EmCkeditor',
   props: {
@@ -18,6 +16,7 @@ export default {
       default: 200,
     },
     className: Object,
+    config: Object,
     id: {
       type: String,
       default: 'emeditor',
@@ -56,7 +55,7 @@ export default {
     },
     afterLoadScript() {
       const editorElement = window.CKEDITOR.document.getById(this.id);
-      const editor = window.CKEDITOR.replace(this.id, config);
+      const editor = window.CKEDITOR.replace(this.id, this.config || config);
       editorElement.setHtml(this.text || this.value || '');
       editor.on('change', (evt) => {
         const value = evt.editor.getData();

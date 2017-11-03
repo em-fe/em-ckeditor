@@ -1,41 +1,7 @@
 export default {
-  toolbar: [
-    {
-      name: 'clipboard',
-      items: ['Undo', 'Redo'],
-    },
-    {
-      name: 'styles',
-      items: ['Styles', 'Format'],
-    },
-    {
-      name: 'basicstyles',
-      items: ['Bold', 'Italic', 'Strike', '-', 'RemoveFormat'],
-    },
-    {
-      name: 'paragraph',
-      items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote'],
-    },
-    {
-      name: 'links',
-      items: ['Link', 'Unlink'],
-    },
-    {
-      name: 'insert',
-      items: ['Image', 'Table'],
-    },
-    {
-      name: 'tools',
-      items: ['Maximize'],
-    },
-    {
-      name: 'editing',
-      items: ['Scayt'],
-    },
-  ],
   customConfig: '',
   extraPlugins: 'autoembed,embedsemantic,image2,uploadimage,uploadfile',
-  removePlugins: 'image',
+  removePlugins: 'about',
   height: this.height,
   contentsCss: [], // 可以注入css
   bodyClass: 'em-editor-body',
