@@ -1,15 +1,31 @@
 <template>
   <div>
-    这是刚开始的数据: {{ data1 }}
+    <h2>编辑器的基本使用</h2>
+    <div>
+      <p>这是刚开始的数据: {{ data1 }}</p>
+      <button @click="get">获取内容</button><span v-show="subData">提交内容为：{{subData}}</span>
+    </div>
     <br>
     <br>
-    <button @click="get">获取内容</button>
+    <em-ckeditor :id="editorId1" v-model="data1" :className="{'editor-page': true}" uploadlink="http://shared-client.inner.evente.cn:30340/upload/upImg"></em-ckeditor>
     <br>
     <br>
-    <div v-show="subData">提交内容为：{{subData}}</div>
+    <p>基本源码</p>
+    <pre>
+      &lt;em-ckeditor :id="editorId1" v-model="data1" :className="{'editor-page': true}" uploadlink="http://shared-client.inner.evente.cn:30340/upload/upImg"&gt;&lt;/em-ckeditor&gt;
+    </pre>
     <br>
     <br>
-    <em-ckeditor v-model="data1" :className="{'editor-page': true}" uploadlink="http://shared-client.inner.evente.cn:30340/upload/upImg"></em-ckeditor>
+    <h2>编辑器的扩展配置</h2>
+    <em-ckeditor id="editor2" v-model="data2" :config="conf"></em-ckeditor>
+    <br>
+    <br>
+    <p>扩展源码</p>
+    <pre>
+      &lt;em-ckeditor id="editor2" v-model="data2" :config="conf"&gt;&lt;/em-ckeditor&gt;
+    </pre>
+    <br>
+    <br>
     <br>
     <h3>API</h3>
     <table>
@@ -69,6 +85,11 @@
           <td>ckeditor 的 css 地址</td>
           <td>String</td>
           <td>https://cdn.ckeditor.com/4.7.3/standard-all/contents.css</td>
+        <tr>
+          <td>config</td>
+          <td>ckeditor 的 自定义配置</td>
+          <td>Object</td>
+          <td>-</td>
         </tr>
       </tbody>
     </table>
@@ -98,13 +119,19 @@ export default {
   data() {
     return {
       data1: '<p>test</p>',
+      data2: '<p>test data2</p>',
+      editorId1: 'editor1',
       subData: '',
+      conf: {
+  			toolbarLocation: 'bottom',
+  			removePlugins: 'elementspath,resize',
+  		},
     };
   },
   methods: {
     get() {
       var editorElement = window.CKEDITOR.document.getById('editor');
-      var data = window.CKEDITOR.instances.emeditor.getData();
+      var data = window.CKEDITOR.instances[this.editorId1].getData();
       this.subData = data;
     },
   },
