@@ -3,7 +3,6 @@
 
 [![em-ckeditor](https://img.shields.io/npm/v/em-ckeditor.svg?style=flat-square)](https://www.npmjs.org/package/em-ckeditor)
 [![NPM downloads](http://img.shields.io/npm/dm/em-ckeditor.svg?style=flat-square)](https://npmjs.org/package/em-ckeditor)
-<!-- [![Package Quality](http://npm.packagequality.com/shield/em-ckeditor.svg)](http://packagequality.com/#?package=em-ckeditor) -->
 [![NPM downloads](https://img.shields.io/npm/dt/em-ckeditor.svg?style=flat-square)](https://npmjs.org/package/em-ckeditor)
 
 ## Usage
