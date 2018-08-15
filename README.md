@@ -1,48 +1,24 @@
 # em-ckeditor
-基于 VUE2 的 ckeditor 富文本编辑器
+>基于 VUE2 的 ckeditor 富文本编辑器
 
 [![em-ckeditor](https://img.shields.io/npm/v/em-ckeditor.svg?style=flat-square)](https://www.npmjs.org/package/em-ckeditor)
 [![NPM downloads](http://img.shields.io/npm/dm/em-ckeditor.svg?style=flat-square)](https://npmjs.org/package/em-ckeditor)
 <!-- [![Package Quality](http://npm.packagequality.com/shield/em-ckeditor.svg)](http://packagequality.com/#?package=em-ckeditor) -->
 [![NPM downloads](https://img.shields.io/npm/dt/em-ckeditor.svg?style=flat-square)](https://npmjs.org/package/em-ckeditor)
 
-## 结构
+## Usage
 
-``` bash
-.
-├── build/                      # webpack 配置文件
-│   └── ...
-├── examples/
-│   ├── esm/                    # 开发运行的例子，里面会调用封装好的组件
-│   │   ├── components          # 业务级组件部分
-│   │   └── ...
-├── src/
-│   ├── EmCkeditor.vue          # 真正的组件
-│   └── index.js                # 全局注册组件，将组件引入，并添加到 em-ckeditor 对象中
-├── .babelrc                    # Babel 配置
-├── .eslintignore               # 如果您不想被 Eslint 检测，那么请您在这里把它加上
-├── .eslintrc.js                # Eslint 配置
-├── .gitattributes              # git的相关配置
-├── .gitignore                  # 如果您不想被 Git 控制，那么请您在这里把它加上
-├── .stylelintignore            # 不被 Stylelint 检查
-├── .stylelintrc                # Stylelint 配置
-└── package.json                # 启动项目的命令和依赖包等信息聚集地
-```
+1. `yarn add em-ckeditor`
+2. `<em-ckeditor id="editor2" v-model="data2" :config="conf"></em-ckeditor>`
 
-## 命令
+## command
 
-`npm install` 安装依赖包
+`npm install` Installation dependency package
 
-`npm start` 开发环境
+`npm start` Local development
 
-1. 热重载
-2. vue 编译
+`npm run build` Build
 
-`npm run build` 打包
-
-1. js 打包
-
-
-## 看效果
+## Debugging
 
 确定安装完依赖`npm install`之后，运行`npm start`，会自动调到[`http://localhost:8082`]

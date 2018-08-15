@@ -16,7 +16,10 @@ export default {
       default: 200,
     },
     className: Object,
-    config: Object,
+    config: {
+      type: Object,
+      default: () => {},
+    },
     id: {
       type: String,
       default: 'emeditor',
@@ -25,17 +28,13 @@ export default {
       type: Function,
       default: () => {},
     },
-    uploadlink: {
-      type: String,
-      default: 'http://shared-client.inner.evente.cn:30340/upload/upImg',
-    },
     cdnjs: {
       type: String,
-      default: 'https://cdn.ckeditor.com/4.7.3/standard-all/ckeditor.js',
+      default: 'https://unpkg.com/ckeditor@4.10.0/ckeditor.js',
     },
     cdncss: {
       type: String,
-      default: 'https://cdn.ckeditor.com/4.7.3/standard-all/contents.css',
+      default: 'https://unpkg.com/ckeditor@4.10.0/contents.css',
     },
   },
   mounted() {
@@ -50,13 +49,14 @@ export default {
   },
   methods: {
     configEditor() {
-      config.filebrowserUploadUrl = this.uploadlink;
       config.contentsCss.push(this.cdncss);
     },
     afterLoadScript() {
       const editorElement = window.CKEDITOR.document.getById(this.id);
-      const editor = window.CKEDITOR.replace(this.id, this.config || config);
+      const cfg = Object.assign({}, config, this.config);
+      const editor = window.CKEDITOR.replace(this.id, cfg);
       editorElement.setHtml(this.text || this.value || '');
+      this.$emit('inited', editorElement, editor, window.CKEDITOR);
       editor.on('change', (evt) => {
         const value = evt.editor.getData();
         this.$emit('input', value);

@@ -1,6 +1,6 @@
 {
   "name": "em-ckeditor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "vue 的 ckeditor 富文本编辑器",
   "main": "dist/em-ckeditor.js",
   "files": [
