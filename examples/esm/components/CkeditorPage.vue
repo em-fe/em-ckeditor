@@ -7,12 +7,12 @@
     </div>
     <br>
     <br>
-    <em-ckeditor :id="editorId1" v-model="data1" :className="{'editor-page': true}" uploadlink="http://shared-client.inner.evente.cn:30340/upload/upImg"></em-ckeditor>
+    <em-ckeditor :id="editorId1" v-model="data1" :className="{'editor-page': true}"></em-ckeditor>
     <br>
     <br>
     <p>基本源码</p>
     <pre>
-      &lt;em-ckeditor :id="editorId1" v-model="data1" :className="{'editor-page': true}" uploadlink="http://shared-client.inner.evente.cn:30340/upload/upImg"&gt;&lt;/em-ckeditor&gt;
+      &lt;em-ckeditor :id="editorId1" v-model="data1" :className="{'editor-page': true}"&gt;&lt;/em-ckeditor&gt;
     </pre>
     <br>
     <br>
@@ -69,22 +69,16 @@
           <td>200</td>
         </tr>
         <tr>
-          <td>uploadlink</td>
-          <td>上传的 ajax 接口地址</td>
-          <td>String</td>
-          <td>http://shared-client.inner.evente.cn:30340/upload/upImg</td>
-        </tr>
-        <tr>
           <td>cdnjs</td>
           <td>ckeditor 的 js 地址</td>
           <td>String</td>
-          <td>https://cdn.ckeditor.com/4.7.3/standard-all/ckeditor.js</td>
+          <td>https://unpkg.com/ckeditor@4.10.0/ckeditor.js</td>
         </tr>
         <tr>
           <td>cdncss</td>
           <td>ckeditor 的 css 地址</td>
           <td>String</td>
-          <td>https://cdn.ckeditor.com/4.7.3/standard-all/contents.css</td>
+          <td>https://unpkg.com/ckeditor@4.10.0/contents.css</td>
         <tr>
           <td>config</td>
           <td>ckeditor 的 自定义配置</td>
@@ -108,6 +102,11 @@
           <td>change</td>
           <td>改变触发的方法</td>
           <td>val</td>
+        </tr>
+        <tr>
+          <td>inited</td>
+          <td>ckeditor初始化完成，并设置完内容</td>
+          <td>富文本id选择器选中的元素， ckeditor 对象， window.CKEDITOR</td>
         </tr>
       </tbody>
     </table>

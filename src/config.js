@@ -7,6 +7,10 @@ export default {
   bodyClass: 'em-editor-body',
   format_tags: 'p;h1;h2;h3;pre',
   removeDialogTabs: 'image:advanced;link:advanced',
+  filebrowserImageBrowseUrl: 'http://www.easymock.com',
+  filebrowserImageUploadUrl: 'http://www.easymock.com',
+  filebrowserBrowseUrl: 'http://www.easymock.com',
+  filebrowserUploadUrl: 'http://www.easymock.com',
   stylesSet: [
     {
       name: 'Marker',
